@@ -16,7 +16,7 @@ getStatus(){
 case $1 in
     "+") action="up";;
     "-") action="down";;
-    "*")
+    *)
         dunstify -u critical "Unknown action: ${1}";exit 1;;
 esac
 
